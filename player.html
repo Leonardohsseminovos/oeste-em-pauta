@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rádio Conectiva Oeste — player</title>
+<meta name="description" content="Player da Rádio Conectiva Oeste.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600&amp;family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="popup" aria-label="Rádio Conectiva Oeste">
+  <img src="logo-conectiva-negativo.png" alt="Conectiva Oeste — Jornalismo e comunicação regional" class="pop-logo">
+  <div class="pop-art"><img src="emblema.png" alt=""></div>
+  <span class="pl-kicker" style="justify-content:center"><span class="dot-live"></span><span data-pl="status">Clique para ouvir</span></span>
+  <h1 data-pl="title">Rádio Conectiva Oeste</h1>
+  <div class="pop-artist" data-pl="artist">Clique para ouvir</div>
+  <div class="pl-bar"><span data-pl="elapsed">0:00</span><div class="pl-track"><div class="pl-fill" data-pl="fill"></div></div><span data-pl="dur">AO VIVO</span></div>
+  <div class="pl-btns"><button class="ib" type="button" data-pl="prev" aria-label="Anterior"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 20L9 12l10-8v16z" fill="currentColor"/><path d="M5 19V5"/></svg></button><button class="pp" type="button" data-pl="toggle" aria-label="Ouvir rádio"><svg class="i-play" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7V5z" fill="currentColor"/></svg><svg class="i-pause" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg></button><button class="ib" type="button" data-pl="next" aria-label="Próxima"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4l10 8-10 8V4z" fill="currentColor"/><path d="M19 5v14"/></svg></button></div>
+  <div class="eq" aria-hidden="true" style="justify-content:center;height:28px;margin:0"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="pop-vol"><span style="display:inline-flex"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span><label class="sr" for="vol2">Volume</label><input id="vol2" class="vol" type="range" min="0" max="100" value="80" data-pl="vol"></div>
+  <ol class="queue dark" data-pl="queue"></ol>
+  <a href="./" target="_blank" rel="noopener" class="pop-site">Abrir o site do Conectiva Oeste</a>
+</main>
+<script src="app.js" data-media=""></script>
+</body>
+</html>
